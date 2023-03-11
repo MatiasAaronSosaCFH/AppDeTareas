@@ -6,63 +6,9 @@
         xmlns:local="clr-namespace:AppDeTareas"
         mc:Ignorable="d"
         Title="Tareas" Height="600" Width="800" Background="#B4E4FF" BorderThickness="5" BorderBrush="#DFFFD8" MaxHeight="1200" MaxWidth="2000">
-    <Window.Resources>
-        <ControlTemplate x:Key="BotonInicial" TargetType="{x:Type Button}">
-            <Border Background="#F7C8E0" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="4" CornerRadius="20">
-                <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Border>
-        </ControlTemplate>
-    </Window.Resources>
+    
     <Grid>
 
-        <Grid.ColumnDefinitions>
-            
-            <ColumnDefinition Width="*"></ColumnDefinition>
-        </Grid.ColumnDefinitions>
-
-        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top">
-
-            <Expander Header="Información adicional">
-
-                <StackPanel >
-
-                    <Button Template="{DynamicResource BotonInicial}" Content="HolaQueTal" FontSize="20" Height="40" Width="200" BorderBrush="#F7C8E0" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center" >
-
-                    </Button>
-                                                        
-                    <Border BorderThickness="4, 6, 4, 6" Margin="3" BorderBrush=" #F7C8E0" CornerRadius="40">
-
-                        <Button  Content="Botón en el panel desplegable" FontFamily="Comic Sans MS" FontStretch="Expanded" Background="#DFFFD8" BorderBrush="#4fdce1" Height="40" Click="Button_Click">
-
-                            <Button.Template>
-
-                                <ControlTemplate TargetType="{x:Type Button}">
-
-                                    <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="3" Background="#F7C8E0" CornerRadius="0">
-                                        <ContentPresenter Content="{TemplateBinding ContentControl.Content}" HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
-                                    </Border>                                    
-                                    
-                                </ControlTemplate>
-                                
-                            </Button.Template>
-                            
-                        </Button>
-
-                    </Border>
-
-                    <Border BorderThickness="4, 6, 4, 6" Margin="3" BorderBrush=" #F7C8E0" CornerRadius="60">
-
-                        <Button  Content="Boton De Borrar Varias Tareas" FontFamily="Comic Sans MS" FontStretch="Expanded" Background="#F7C8E0" Height="40" Click="Button_Click_1"/>
-
-                    </Border>
-
-                    <Border BorderThickness="4, 6, 4, 6" Margin="3" BorderBrush=" #F7C8E0" CornerRadius="40">
-
-                        <Button  Content="Revisar Calendario" FontFamily="Comic Sans MS" FontStretch="Expanded" Background="#F7C8E0" Height="40" Click="Button_Click_2"/>
-
-                    </Border>
-                </StackPanel>
-            </Expander>
-        </StackPanel>
+        
     </Grid>
 </Window>
